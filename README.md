@@ -38,8 +38,8 @@ In the settings layer the keyboard is changeable to a qwerty-laoyut
 - [X] Basic Layer: Colemak
 - [X] Layer: Umlauts and special chars
 - [X] Layer: Settings
-- [ ] Layer: QWERTY
-- [ ] Layer: Umlauts and special chars for qwerty
+- [X] Layer: QWERTY
+- [X] Layer: Umlauts and special chars for qwerty
 - [ ] Linux Compose keys
 - [ ] Display Left: Layer and modifiers
 - [ ] Display Right: WPS Graph
@@ -48,6 +48,7 @@ In the settings layer the keyboard is changeable to a qwerty-laoyut
 - [ ] RGB Lighting: Highlight key with alt function
 - [ ] Caps-Word on left+right shift
 - [ ] ZMK Studio
+- [ ] Github Action: Keymap Drawer
 
 ## Links
 
