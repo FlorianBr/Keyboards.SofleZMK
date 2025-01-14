@@ -1,21 +1,27 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/petejohanson
-    - name: infely
-      url-base: https://github.com/infely
+      url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: m165437
+      url-base: https://github.com/M165437
+
+
   projects:
+    # ZMK Base Firmware
     - name: zmk
       remote: zmkfirmware
-      revision: feat/pointers-move-scroll
-      import: app/west.yml
-    - name: nice-view-battery
-      remote: infely
       revision: main
+      import: app/west.yml
+    # ZMK-Helpers: For german unicode chars
     - name: zmk-helpers
       remote: urob
       revision: main
+    # nice!view gem
+    - name: nice-view-gem
+      remote: m165437
+      revision: main
+
   self:
     path: config
