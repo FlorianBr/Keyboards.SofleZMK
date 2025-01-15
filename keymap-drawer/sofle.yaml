@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  COLEMAK:
+  DVORAK:
   - Esc
   - '1'
   - '2'
@@ -15,43 +15,43 @@ layers:
   - '0'
   - $$mdi:backspace-outline$$
   - ↹
-  - Q
-  - W
-  - F
-  - P
-  - G
-  - ↓
-  - J
-  - L
-  - U
-  - Y
-  - ;
-  - Settings
-  - {t: Pause Break, h: Alt}
-  - A
-  - R
-  - S
-  - T
-  - D
-  - ←
-  - H
-  - N
-  - E
-  - I
-  - O
   - ''''
-  - ⌦
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - →
-  - K
-  - M
   - ','
   - .
+  - P
+  - Y
+  - ↓
+  - F
+  - G
+  - C
+  - R
+  - L
   - /
+  - {t: Pause Break, h: Alt}
+  - A
+  - O
+  - E
+  - U
+  - I
+  - ←
+  - D
+  - H
+  - T
+  - N
+  - S
+  - '-'
+  - ⌦
+  - ;
+  - Q
+  - J
+  - K
+  - X
+  - →
+  - B
+  - M
+  - W
+  - V
+  - Z
   - \
   - MUTE
   - $$mdi:apple-keyboard-control$$
@@ -62,9 +62,9 @@ layers:
   - ENTER
   - ENTER
   - RSHIFT
-  - Cursor
+  - Settings
   - '='
-  - '-'
+  - Cursor
   Alt:
   - '`'
   - F1
@@ -221,7 +221,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
@@ -257,7 +257,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Cursor:
@@ -322,6 +322,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}

@@ -14,32 +14,31 @@
           compatible = "zmk,keymap";
 
           layer_0 {
-               display-name = "COLEMAK"; // COLEMAK Basic Layer
+               display-name = "DVORAK"; // DVORAK Basic Layer
                bindings = <
 // ╭───────────┬───────────┬───────────┬───────────┬───────────┬───────────╮            ╭───────────╮            ╭───────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp ESC      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5                   &kp UP                   &kp N6      &kp N7        &kp N8        &kp N9        &kp N0        &kp BSPC
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp TAB      &kp Q       &kp W       &kp F       &kp P       &kp G                    &kp DOWN                 &kp J       &kp L         &kp U         &kp Y         &kp SEMI      &mo 4
+    &kp TAB      &kp APOS    &kp COMMA   &kp DOT     &kp P       &kp Y                    &kp DOWN                 &kp F       &kp G         &kp C         &kp R         &kp L         &kp FSLH
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &lt 1 PAUSE_BREAK  &kp A &kp R       &kp S       &kp T       &kp D                    &kp LEFT                 &kp H       &kp N         &kp E         &kp I         &kp O         &kp APOS
+    &lt 1 PAUSE_BREAK &kp A  &kp O       &kp E       &kp U       &kp I                    &kp LEFT                 &kp D       &kp H         &kp T         &kp N         &kp S         &kp MINUS
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp DEL      &kp Z       &kp X       &kp C       &kp V       &kp B                    &kp RIGHT                &kp K       &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp BSLH
+    &kp DEL      &kp SEMI    &kp Q       &kp J       &kp K       &kp X                    &kp RIGHT                &kp B       &kp M         &kp W         &kp V         &kp Z         &kp BSLH
 // ╰───────────┴───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤├───────────┤╭───────────├───────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-    &kp C_MUTE               &kp LCTRL   &kp LGUI    &kp LALT    &kp LSHIFT  &kp SPACE    &kp ENTER    &kp ENTER   &kp RSHIFT  &mo 5         &kp EQUAL     &kp MINUS
+    &kp C_MUTE               &kp LCTRL   &kp LGUI    &kp LALT    &kp LSHIFT  &kp SPACE    &kp ENTER    &kp ENTER   &kp RSHIFT  &mo 4         &kp EQUAL     &mo 5
 //                         ╰───────────┴───────────┴───────────┴───────────┴───────────╯╰───────────╯╰───────────┴───────────┴─────────────┴─────────────┴─────────────╯
                >;
                sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
           };
           layer_1 {
-               display-name = "Alt"; // Alt keys for COLEMAK
-
+               display-name = "Alt"; // Alt keys for DVORAK
                bindings = <
 // ╭───────────┬───────────┬───────────┬───────────┬───────────┬───────────╮            ╭───────────╮            ╭───────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp GRAVE   &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                   &trans                   &kp F6      &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &trans      &trans      &trans      &trans      &trans      &trans                   &trans                   &trans      &trans        &de_ue        &trans        &trans        &kp F12
+     &trans      &trans      &trans      &trans      &trans      &trans                   &trans                   &trans      &trans        &trans        &trans        &trans        &kp F12
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &trans      &de_ae      &trans      &trans      &trans      &trans                   &trans                   &kp LBKT    &kp RBKT      &curr_euro    &trans        &de_oe        &trans
+     &trans      &de_ae      &de_oe      &curr_euro  &de_ue      &trans                   &trans                   &kp LBKT    &kp RBKT      &trans        &trans        &trans        &trans
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &trans      &trans      &trans      &trans      &trans      &trans                   &trans                   &kp LBRC    &kp RBRC      &trans        &trans        &trans        &trans
 // ╰───────────┴───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤├───────────┤╭───────────├───────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
