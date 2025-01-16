@@ -34,12 +34,9 @@ In the settings layer the keyboard is changeable to a qwerty-laoyut
 - [X] Joystick
 - [X] Battery Level
 - [X] RGB LEDs
-- [X] Powermanagement
-- [X] Basic Layer: Colemak
+- [X] Power management
 - [X] Layer: Umlauts and special chars
 - [X] Layer: Settings
-- [X] Layer: QWERTY
-- [X] Layer: Umlauts and special chars for qwerty
 - [X] Linux Compose keys
 - [X] Display Left: Layer and WPS Graph
 - [X] Display Right: Logo
@@ -49,7 +46,7 @@ In the settings layer the keyboard is changeable to a qwerty-laoyut
 - [ ] RGB Lighting: Highlight key with alt function
 - [ ] Caps-Word on left+right shift
 - [ ] ZMK Studio
-- [ ] Github Action: Keymap Drawer
+- [X] Github Action: Keymap Drawer
 
 ## Links
 
