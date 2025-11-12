@@ -40,7 +40,7 @@ In the settings layer the keyboard is changeable to a qwerty-laoyut
 - [X] Linux Compose keys
 - [X] Display Left: Layer and WPS Graph
 - [X] Display Right: Logo
-- [ ] Display Right: Arasaka Logo
+- [X] Display Right: Arasaka Logo
 - [X] RGB Lighting: Basic function
 - [X] RGB Lighting: Layer depending colors
 - [ ] RGB Lighting: Highlight key with alt function

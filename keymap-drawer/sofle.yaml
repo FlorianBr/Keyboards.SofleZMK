@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: sofle/rev1}
+layout: {zmk_keyboard: sofle}
 layers:
   QWERTY:
   - Esc
@@ -7,7 +7,7 @@ layers:
   - '3'
   - '4'
   - '5'
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_UP'
   - '6'
   - '7'
   - '8'
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_DOWN'
   - Y
   - U
   - I
@@ -33,7 +33,7 @@ layers:
   - D
   - F
   - G
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
   - H
   - J
   - K
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_RIGHT'
   - N
   - M
   - ','
@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LSHIFT
   - ␣
-  - {t: ▽, type: trans}
+  - '&mkp LCLK'
   - ENTER
   - RSHIFT
   - $$mdi:apple-keyboard-option$$
@@ -82,28 +82,28 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&curr_euro'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&de_ue'
   - {t: ▽, type: trans}
-  - '&de_oe'
   - {t: ▽, type: trans}
   - F12
   - {type: held}
   - '&de_ae'
-  - '&de_eszett'
   - {t: ▽, type: trans}
+  - '&de_eszett'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
   - ']'
+  - '&curr_euro'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&de_oe'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -130,6 +130,71 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  ColemakDH:
+  - Esc
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '&mmv MOVE_UP'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - $$mdi:backspace-outline$$
+  - {t: ↹, h: Settings}
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - '&mmv MOVE_DOWN'
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - Cursor
+  - {t: Pause Break, h: Alt}
+  - A
+  - R
+  - S
+  - T
+  - G
+  - '&mmv MOVE_LEFT'
+  - M
+  - N
+  - E
+  - I
+  - O
+  - ''''
+  - ⌦
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - '&mmv MOVE_RIGHT'
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - \
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - LSHIFT
+  - ␣
+  - '&mkp LCLK'
+  - ENTER
+  - RSHIFT
+  - $$mdi:apple-keyboard-option$$
+  - '='
+  - '-'
   Settings:
   - {t: ▽, type: trans}
   - BT 1
@@ -138,7 +203,7 @@ layers:
   - BT 4
   - BT 5
   - {t: ▽, type: trans}
-  - {t: Settings, h: toggle}
+  - {t: ColemakDH, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
