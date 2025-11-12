@@ -4,6 +4,8 @@
 
 A repository for my Sofle split ergo mechanical keyboard equipped with a Nice!Nano controller and battery and running with ZMK.
 
+Works with the [Prospektor Scanner](https://github.com/t-ogura/zmk-config-prospector)
+
 ## The Hardware
 
 ### Aliexpress Keyboard
@@ -18,11 +20,12 @@ A cheap(ish) keyboard from Aliexpress. According to product page it has the foll
 
 ### Self-soldered
 
+Currently in progress
+
 ## The Software
 
-The basic layer is a colemak layout with additional chars like german umlauts on a alternative layer.
-In the settings layer the keyboard is changeable to a qwerty-laoyut
-
+The basic layer can be switched between QWERTY and Colemak-DH layouts with additional alts layer for chars like german umlauts.
+There is also a layer to change settings and for cursors and navigation keys.
 ## The Keymap
 
 ![Keymap](./keymap-drawer/sofle.svg)
@@ -56,3 +59,9 @@ Maybe interesting links:
 - <https://github.com/a741725193/zmk-sofle/tree/main>
 - <https://github.com/infely/nice-view-battery>
 - <https://github.com/urob/zmk-helpers/tree/main>
+- <https://github.com/siddhantac/nice-view>
+
+## Image Gallery
+
+![Sofle](./sofle_1.jpg)
+![Sofle](./sofle_2.jpg)
