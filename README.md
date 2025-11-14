@@ -46,6 +46,7 @@ There is also a layer to change settings and for cursors and navigation keys.
 - [X] Display Right: Arasaka Logo
 - [X] RGB Lighting: Basic function
 - [X] RGB Lighting: Layer depending colors
+- [X] Mute Button
 - [ ] RGB Lighting: Highlight key with alt function
 - [ ] Caps-Word on left+right shift
 - [ ] ZMK Studio
