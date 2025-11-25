@@ -13,6 +13,31 @@
 };
 
 / {
+     macros {
+          uml_a: uml_a {
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings 
+                    = <&macro_tap &kp PAUSE_BREAK &kp A &kp DOUBLE_QUOTES>
+                    ;
+          };
+          uml_u: uml_u {
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                    = <&macro_tap &kp PAUSE_BREAK &kp U &kp DOUBLE_QUOTES>
+                    ;
+          };
+          uml_o: uml_o {
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                    = <&macro_tap &kp PAUSE_BREAK &kp O &kp DOUBLE_QUOTES>
+                    ;
+          };
+    };
+
+
      keymap {
           compatible = "zmk,keymap";
           layer_0 {
@@ -38,9 +63,9 @@
 // ╭───────────┬───────────┬───────────┬───────────┬───────────┬───────────╮            ╭───────────╮            ╭───────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp GRAVE   &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                   &trans                   &kp F6      &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &trans      &trans      &trans      &trans      &trans      &trans                   &trans                   &trans      &trans        &uc UC_DE_UE  &trans        &trans        &kp F12
+     &trans      &trans      &trans      &trans      &trans      &trans                   &trans                   &trans      &trans        &uml_u        &trans        &trans        &kp F12
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &trans     &uc UC_DE_AE &trans     &uc UC_DE_SS &trans      &trans                   &trans                   &kp LBKT    &kp RBKT      &uc UC_CURR_EURO  &trans    &uc UC_DE_OE  &trans
+     &trans      &uml_a      &trans     &uc UC_DE_SS &trans      &trans                   &trans                   &kp LBKT    &kp RBKT      &uc UC_CURR_EURO  &trans    &uml_o        &trans
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &trans      &trans      &trans      &trans      &trans      &trans                   &trans                   &kp LBRC    &kp RBRC      &trans        &trans        &trans        &trans
 // ╰───────────┴───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤├───────────┤╭───────────├───────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
@@ -72,9 +97,9 @@
 // ╭───────────┬───────────┬───────────┬───────────┬───────────┬───────────╮            ╭───────────╮            ╭───────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp GRAVE   &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                   &trans                   &kp F6      &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &trans      &trans      &trans     &uc UC_CURR_EURO &trans  &trans                   &trans                   &trans      &uc UC_DE_UE  &trans        &uc UC_DE_OE  &trans        &kp F12
+     &trans      &trans      &trans     &uc UC_CURR_EURO &trans  &trans                   &trans                   &trans      &uml_u        &trans        &uml_o        &trans        &kp F12
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &trans      &uc UC_DE_AE &uc UC_DE_SS &trans    &trans      &trans                   &trans                   &kp LBKT    &kp RBKT      &trans        &trans        &trans        &trans
+     &trans      &uml_a      &uc UC_DE_SS &trans    &trans      &trans                   &trans                   &kp LBKT    &kp RBKT      &trans        &trans        &trans        &trans
 // ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤            ├───────────┤            ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &trans      &trans      &trans      &trans      &trans      &trans                   &trans                   &kp LBRC    &kp RBRC      &trans        &trans        &trans        &trans
 // ╰───────────┴───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤├───────────┤╭───────────├───────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
