@@ -88,22 +88,22 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&de_ue'
+  - '&uml_u'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F12
   - {type: held}
-  - '&de_ae'
+  - '&uml_a'
   - {t: ▽, type: trans}
-  - '&de_eszett'
+  - '&uc UC_DE_SS'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
   - ']'
-  - '&curr_euro'
+  - '&uc UC_CURR_EURO'
   - {t: ▽, type: trans}
-  - '&de_oe'
+  - '&uml_o'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -212,19 +212,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&curr_euro'
+  - '&uc UC_CURR_EURO'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&de_ue'
+  - '&uml_u'
   - {t: ▽, type: trans}
-  - '&de_oe'
+  - '&uml_o'
   - {t: ▽, type: trans}
   - F12
   - {type: held}
-  - '&de_ae'
-  - '&de_eszett'
+  - '&uml_a'
+  - '&uc UC_DE_SS'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
